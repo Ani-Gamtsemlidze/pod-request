@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo";
+}
+
+@font-face {
+  font-family: "Chivo";
+  src: url("./fonts/Chivo-Regular.woff2") format("woff2"), url("./fonts/Chivo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.pod-main-container {
+  background-color: #121725;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./images/image-host.jpg);
+  background-size: 56% 92%;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+}
+.pod-main-container .pod-box {
+  margin-left: 76px;
+  transform: translateX(100px);
+}
+.pod-main-container .pod-box img {
+  width: 120px;
+  height: 56px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pod-main-container .pod-box .podcast-info {
+  max-width: 720px;
+  padding: 88px 0 0;
+  background-color: #121725;
+  margin-top: 11px;
+}
+.pod-main-container .pod-box .podcast-info .podcast-text h2 {
+  color: #54E6AF;
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 300;
+}
+.pod-main-container .pod-box .podcast-info .podcast-text span {
+  color: #fff;
+}
+.pod-main-container .pod-box .podcast-info .podcast-text p {
+  color: #C2CBE5;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  padding-right: 50%;
+}
+
+#enter-email {
+  position: relative;
+}
+#enter-email input {
+  width: 427px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #2C344B;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 32px;
+  outline: none;
+  border: none;
+  margin-top: 40px;
+}
+#enter-email input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#enter-email input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#enter-email button {
+  width: 162px;
+  height: 46px;
+  background-color: #54E6AF;
+  border-radius: 28px;
+  color: #121725;
+  outline: none;
+  border: none;
+  right: 20%;
+  transform: translate(-95%);
+  bottom: 5px;
+  position: absolute;
+}
+
+.logo-inline {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.logo-inline .logo1 {
+  padding: 0 25px;
+}/*# sourceMappingURL=index.css.map */
