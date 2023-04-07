@@ -12,13 +12,22 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Chivo-thin';
+    src: url('./fonts/Chivo-Thin.woff2') format('woff2'),
+        url('./fonts/Chivo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 .pod-main-container{
     background-color: #121725;
     min-height: 100vh;
     display: flex;
     align-items: center;
     background-image: url(./images/image-host.jpg);
-    background-size: 56% 92%;
+    background-size: 56% 88%;
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
@@ -44,23 +53,33 @@
                 text-transform: uppercase;
                 font-size: 52px;
                 line-height: 62px;
-                font-weight: 300;
+                font-family: 'Chivo-thin';
+                font-weight: 100;
+
             }
             span{
                 color: #fff;
+                font-family: 'Chivo-thin';
             }
+
+        }
+        .paragraph-text{
+            width: 445px;
             p{
+                width: 100%;
                 color: #C2CBE5;
                 margin-top: 24px;
                 font-size: 18px;
                 line-height: 28px;
-                padding-right: 50%;
             }
         }
         }
     
     }
 }
+.input-form{
+    margin-top: 40px;
+
 #enter-email{
     position: relative;
     input{
@@ -73,7 +92,6 @@
         padding-left: 32px;
         outline: none;
         border: none;
-        margin-top: 40px;
     }
     input::placeholder{
         color: rgba(255, 255, 255, 0.5)
@@ -85,13 +103,30 @@
         background-color: #54E6AF;
         border-radius: 28px;
         color: #121725;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: bold;
         outline: none;
         border: none;
         right: 20%;
-        transform: translate(-95%);
+        transform: translateX(-95%);
         bottom: 5px;
+        top: 5px;
         position: absolute;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            background-color: #B3FFE2;
+        }
     }
+    #error-text{
+        display: none;
+        color: #FB3E3E;
+        margin: 10px 20px;
+        font-size: 12px;
+        line-height: 14.28px;
+    }
+}
 }
 .logo-inline{
     display: flex;
@@ -101,6 +136,61 @@
         padding: 0 25px;
 
     }
+}
+.image-box{
+    position: relative;
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+        display: none;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .pod-main-container{
+        background-size: 86% 45%;
+        background-image: url(./images/image-host.jpg);
+        width: 100%;
+        object-fit: contain;
+        background-position-y: 0;
+        .pod-box{
+            margin-left: 50px;
+            transform: translate(0);
+            width: 90%;
+            img{
+                width: 100px;
+            }
+            .podcast-info{
+                max-width: 635px;
+             
+            }
+        }
+
+        .podcast-text{
+            h2{
+                font-size: 27px;
+                line-height: 42px;
+            }
+            .paragraph-text{
+                width: 100%;
+                p {
+                   width: 60%;
+                }
+            }
+        }
+        .input-form{
+            #enter-email{
+                button{
+                    transform: translateX(-7%);
+                }
+            }
+        }
+        .logo-inline .logo1 {
+            padding: 0 10px;
+        }
+        
+        }
 }
 
 
