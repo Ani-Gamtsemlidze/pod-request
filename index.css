@@ -146,7 +146,7 @@
   max-width: 100%;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 768px) {
+@media only screen and (max-width: 1012px) {
   .pod-main-container {
     background-image: linear-gradient(to right, rgba(18, 23, 37, 0.7), rgb(18, 23, 37)), url(./images/image-host-mobile.jpg);
     -o-object-fit: contain;
@@ -209,13 +209,13 @@
     display: none;
   }
   .logo-inline-mobile {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
   }
   .logo-box1 {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .logo-box1 .logo-mobile-1 {

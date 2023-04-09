@@ -153,7 +153,7 @@
     
 }
 
-@media only screen and (min-width: 200px) and (max-width: 768px)  {
+@media only screen and (max-width: 1012px)  {
     .pod-main-container{
     background-image: linear-gradient(to right, rgba(18, 23, 37, 0.7), rgba(18, 23, 37, 1)), url(./images/image-host-mobile.jpg);
     object-fit: contain;
@@ -221,14 +221,14 @@
     }
 }
 .logo-inline-mobile{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
   
 }
 .logo-box1{
-    display: flex;
+    display: none;
     flex-direction: column;
     
     .logo-mobile-1{
@@ -247,7 +247,62 @@
     }
 }
 }
+// @media only screen and (min-width: 498px) and (max-width: 1024px) {
+//     .pod-main-container{
 
+//         background-image: url(./images/image-host-mobile.jpg);
+//         background-size: 100% 90%;
+//         background-repeat: no-repeat;
+//         background-position: right;
+//         width: 100%;
+    
+//         .pod-box{
+//             margin-left: 76px;
+//             transform: translateX(100px);
+//             img{
+//                 width: 120px;
+//                 height: 56px;
+//                 object-fit: contain;
+//             }
+//             .podcast-info{
+//                 max-width: 720px;
+//                 padding: 88px 0 0;
+//                 background-color:#121725;
+//                 margin-top: 11px;
+    
+//                 .podcast-text{
+                    
+//                     h2{
+//                         color: #54E6AF;
+//                     text-transform: uppercase;
+//                     font-size: 52px;
+//                     line-height: 62px;
+//                     font-family: 'Chivo-thin';
+//                     font-weight: 100;
+                    
+//                 }
+//                 span{
+//                     color: #fff;
+//                     font-family: 'Chivo-thin';
+//                 }
+    
+//                 .paragraph-text{
+//                     width: 445px;
+//                     p{
+              
+//                         color: #C2CBE5;
+//                         margin-top: 24px;
+//                         font-size: 18px;
+//                         line-height: 28px;
+//                     }
+//                 }
+//             }
+//             }
+        
+//         }
+//     }
+
+// }
 // @media only screen and (max-width: 992px) {
 //     .pod-main-container{
 //     background-image: linear-gradient(to right, rgba(18, 23, 37, 0.7), rgba(18, 23, 37, 1)), url(./images/image-host-mobile.jpg);
