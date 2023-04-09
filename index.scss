@@ -47,15 +47,15 @@
             margin-top: 11px;
 
             .podcast-text{
-         
-            h2{
-                color: #54E6AF;
+                
+                h2{
+                    color: #54E6AF;
                 text-transform: uppercase;
                 font-size: 52px;
                 line-height: 62px;
                 font-family: 'Chivo-thin';
                 font-weight: 100;
-
+                
             }
             span{
                 color: #fff;
@@ -148,21 +148,31 @@
 }
 .logo-inline-mobile{
     display: none;
+    width: 300px;
+    max-width: 100%;
+    
 }
-@media only screen and (max-width: 992px) {
+
+@media only screen and (min-width: 200px) and (max-width: 768px)  {
     .pod-main-container{
     background-image: linear-gradient(to right, rgba(18, 23, 37, 0.7), rgba(18, 23, 37, 1)), url(./images/image-host-mobile.jpg);
+    object-fit: contain;
     background-size: 100% 100%;
     .pod-box{
         margin-left: unset;
         transform: translate(0px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         img{
-            margin-left: 33%;
+           
 
         }
     .podcast-info{
         background-color: transparent;
         padding: 0;
+        width: 100%;
     .podcast-text{
             margin-top: 30px;
             
@@ -191,13 +201,15 @@
         flex-direction: column;
     input{
         width: unset;
-        width: 327px;
+        max-width: 327px;
+        width: 100%;
         height: 46px;
     }
     button{
         position: unset;
         transform: translate(0px);
-        width: 326px;
+        max-width: 326px;
+        width: 100%;
         height: 46px;
         margin-top: 16px;
     }
@@ -212,25 +224,114 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px auto;
+  
 }
 .logo-box1{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    
     .logo-mobile-1{
         padding: 10px;
+      
     }
 }
 .logo-box2{
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     .logo-mobile{
         padding: 10px;
+        img{
+            
+        }
     }
 }
 }
+
+// @media only screen and (max-width: 992px) {
+//     .pod-main-container{
+//     background-image: linear-gradient(to right, rgba(18, 23, 37, 0.7), rgba(18, 23, 37, 1)), url(./images/image-host-mobile.jpg);
+//     object-fit: contain;
+//     background-size: 100% 100%;
+//     object-fit: contain;
+//     .pod-box{
+//         margin-left: unset;
+//         transform: translate(0px);
+//         img{
+//             margin-left: 33%;
+
+//         }
+//     .podcast-info{
+//         background-color: transparent;
+//         padding: 0;
+//     .podcast-text{
+//             margin-top: 30px;
+            
+//         h2{
+//             font-size: 27px;
+//             line-height: 38px;
+//             text-align: center;
+//         }
+//         .paragraph-text{
+//             width: 80%;
+//             margin: 0 auto;
+//             p{
+//                 font-size: 15px;
+//                 line-height: 25px;
+//                 text-align: center;
+                
+//             }
+//         }
+//     }
+// }
+// }
+//     .input-form #enter-email {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//     input{
+//         width: unset;
+//         width: 327px;
+//         height: 46px;
+//     }
+//     button{
+//         position: unset;
+//         transform: translate(0px);
+//         width: 326px;
+//         height: 46px;
+//         margin-top: 16px;
+//     }
+// }
+//     .logo-inline{
+//        display: flex;
+//        flex-direction: column;
+//        display: none;
+//     }
+// }
+// .logo-inline-mobile{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 30px;
+// }
+// .logo-box1{
+//     display: flex;
+//     flex-direction: column;
+    
+//     .logo-mobile-1{
+//         padding: 10px;
+//     }
+// }
+// .logo-box2{
+//     display: flex;
+//     flex-direction: column;
+//     .logo-mobile{
+//         padding: 10px;
+//     }
+// }
+// }
+
 
 
 
